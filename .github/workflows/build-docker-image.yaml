@@ -21,6 +21,7 @@ jobs:
             docker.io/gp42/warpd-builder
           tags: |
             type=ref,event=branch
+            type=sha,format=long
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
